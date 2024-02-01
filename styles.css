@@ -1,0 +1,520 @@
+/* Reset some default styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+button {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f8f9fa;
+  color: #495057;
+}
+
+.container {
+  max-width: 2000px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+/* Header Styles */
+header {
+  background-color: #3aafa9;
+  color: #feffff;
+  text-align: center;
+  padding: 120px 0;
+  position: relative;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 3.5em;
+  letter-spacing: 4px;
+}
+
+header p {
+  font-size: 1.2em;
+  color: #17252a;
+  letter-spacing: 2px;
+}
+
+/* Navigation Styles */
+nav {
+  background-color: #17252a;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #feffff;
+  font-weight: bold;
+  font-size: 1.2em;
+  transition: color 0.3s ease, transform 0.2s ease;
+  padding: 12px 20px;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+nav ul li a:hover {
+  color: #def2f1;
+  transform: scale(1.05);
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: ease-in-out 0.4s;
+}
+
+/* Responsive Navigation */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+}
+
+/* Section Styles */
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  margin-top: 40px;
+}
+
+section h2 {
+  color: #3aafa9;
+  border-bottom: 2px solid #3aafa9;
+  font-size: 2.2em;
+  margin-bottom: 20px;
+}
+
+/* Button Styles */
+.download-btn,
+button {
+  display: inline-block;
+  padding: 15px 25px;
+  background-color: #3aafa9;
+  color: #feffff;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: background-color 0.5s ease;
+  cursor: pointer;
+  margin-top: 15px;
+  border: solid 0px black;
+}
+
+.download-btn:hover,
+button:hover {
+  background-color: #2b7a78;
+  transition: ease-in-out 0.5s;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #2b7a78;
+  color: #feffff;
+  text-align: center;
+  padding: 50px 0;
+  margin-top: 40px;
+}
+
+footer a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+/* Form Styles */
+form {
+  margin: 40px;
+  display: grid;
+  gap: 5px;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 20px black;
+  transition: ease-in-out 0.3s;
+
+}
+
+form:hover {
+  transform: scale(1.05);
+  transition: ease-in-out 0.3s;
+}
+
+label {
+  font-weight: bold;
+}
+
+input,
+textarea {
+  width: 60vh;
+  padding: 10px;
+  margin-bottom: 35px;
+  border: 1px solid;
+  outline: none;
+  border-radius: 8px;
+}
+
+/* Add these styles for the profile picture */
+.profile-container {
+  text-align: center;
+}
+
+.profile-picture {
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  margin-bottom: 30px;
+  border: 5px solid #3aafa9;
+}
+
+/* Project Styles */
+.projects-container {
+  width: 200vh;
+  height: 60vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.project {
+  width: calc(48% - 10px);
+  margin-top: 25px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.project:hover {
+  transform: scale(1.05);
+}
+
+.project h3 {
+  background-color: #3aafa9;
+  color: #feffff;
+  padding: 10px;
+  margin: 0;
+}
+
+.project p {
+  margin: 10px;
+  height: 80px;
+}
+
+/* Project Styles */
+.project img {
+  width: 100%;
+  height: 200px; /* Adjust height as needed */
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.view-btn {
+  display: block;
+  padding: 10px;
+  background-color: #2b7a78;
+  color: #feffff;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 0 0 10px 10px;
+  transition: 0.4s ease;
+  bottom: 0;
+  z-index: 1;
+}
+
+.view-btn:hover {
+  background-color: #2b7a78;
+}
+
+/* Blog Styles */
+#blog {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  margin-top: 40px;
+}
+
+.blog-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.blog-post {
+  width: calc(33.33% - 15px);
+  margin-bottom: 30px;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  color: #1a1a1a;
+}
+
+.skills-list li {
+  margin: 20px 25px;
+  font-size: 3em;
+  transition: color 0.3s ease;
+}
+.skills-list i:hover
+{
+  color: #2b7a78;
+}
+
+/* Add these styles for social icons */
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons a {
+  color: black;
+  font-size: 40px;
+  margin-right: 8px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #2b7a78;
+}
+
+/* Add these styles for the Gallery section */
+#works {
+  background-color: #f8f9fa;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  margin-top: 40px;
+}
+
+/* styles.css */
+
+/* Style for the works section */
+.works-section {
+  background-color: #f4f4f4;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* Style for the gallery container */
+.gallery-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/* Style for individual gallery items */
+.gallery-item {
+  margin: 20px;
+  text-align: center;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 200px; /* Set a fixed height for all images */
+  object-fit: cover; /* Maintain aspect ratio and cover the entire box */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+/* Style for the description of the works */
+.gallery-item p {
+  margin-top: 10px;
+  color: #555;
+}
+
+/* Add these styles for the about section */
+#about {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  margin-top: 40px;
+}
+
+/* Style for the about container */
+.about-container {
+  display: flex;
+  align-items: center;
+}
+
+/* Style for the profile container */
+.profile-container {
+  text-align: center;
+  margin-right: 20px; /* Adjust the margin as needed */
+}
+
+/* Style for the profile picture */
+.profile-picture {
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border: 5px solid #3aafa9;
+}
+
+/* Style for the about content */
+.about-content {
+  flex: 1;
+  line-height:1.9; 
+}
+
+#blog {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  margin-top: 40px;
+  overflow: hidden; /* Ensure the container doesn't overflow when displaying in a single row */
+}
+
+.blog-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.blog-post {
+  width: calc(32% - 50px); /* Adjust width as needed */
+  margin-bottom: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  border: solid 2px #2b7a78;
+}
+
+.blog-post:hover {
+  transform: scale(1.05);
+}
+
+.blog-post h3 {
+  background-color: #2b7a78;
+  color: #feffff;
+  padding: 10px;
+  margin: 0;
+}
+
+.blog-post p {
+  padding: 10px;
+  margin: 0;
+}
+
+.read-more-btn {
+  display: block;
+  padding: 10px;
+  background-color: #2b7a78;
+  color: #feffff;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 0 0 10px 10px;
+  transition: background-color 0.3s ease;
+}
+
+.read-more-btn:hover {
+  background-color: #3aafa9;
+}
+
+/* Add this at the end of your styles.css file */
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  header {
+    padding: 80px 0; /* Adjust padding for smaller screens */
+  }
+
+  header h1 {
+    font-size: 2.5em; /* Adjust font size for smaller screens */
+  }
+
+  header p {
+    font-size: 1em; /* Adjust font size for smaller screens */
+  }
+
+  section {
+    padding: 20px; /* Adjust padding for smaller screens */
+  }
+
+  .project {
+    width: 100%; /* Make projects take full width on smaller screens */
+  }
+
+  .blog-post {
+    width: 100%; /* Make blog posts take full width on smaller screens */
+  }
+
+  .gallery-item {
+    width: 100%; /* Make gallery items take full width on smaller screens */
+  }
+
+  footer {
+    padding: 30px 0; /* Adjust padding for smaller screens */
+  }
+
+  .container {
+    padding: 15px; /* Adjust padding for smaller screens */
+  }
+
+  /* Adjust other styles as needed */
+}
+
+/* Add a media query for even smaller screens if necessary */
+@media (max-width: 480px) {
+  header {
+    padding: 60px 0; /* Further adjust padding for smaller screens */
+  }
+
+  header h1 {
+    font-size: 2em; /* Further adjust font size for smaller screens */
+  }
+
+  header p {
+    font-size: 0.9em; /* Further adjust font size for smaller screens */
+  }
+
+  /* Adjust other styles as needed */
+}
+
+
+
